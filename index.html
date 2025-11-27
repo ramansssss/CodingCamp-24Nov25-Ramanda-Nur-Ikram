@@ -4,16 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List - Raman</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="font-mono">
 
-    <header></header>
+    <header>
+        <h1 class="font-mono text-2xl font-bold"> My Todolist</h1>
+    </header>
 
 
-    <main></main>
+    <main>
+        <section>
+            <form>
+
+                <input type="text" class="border p-2 rounded" id="todo-input" placeholder="Enter a New Todo">
+
+                <input type="date" class="border p-2 rounded" id="todo-input">
+
+            </form>
+
+            <button type="button">Add Todo</button>
 
 
-    <footer></footer>
+        </section>
+
+        <section>
+            <button>Clear All Todos</button>
+
+            <button>Filter Todos</button>
+        </section>
+
+        <section>
+            <header>
+                <h1>List Of Todos</h1>
+            </header>
+
+            <ul>
+                <li>No Todos Available</li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2025 Raman. All right reserved</p>
+    </footer>
     
 
     <script src="js/script.js"></script>
