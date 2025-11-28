@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="font-mono b">
 
     <header>
-        <h1 class="font-mono text-2xl font-bold mx-px m-5" > My Todolist</h1>
+        <h1 class="font-mono text-2xl font-bold mx-px m-5"> My Todolist</h1>
     </header>
 
 
@@ -24,20 +26,24 @@
 
                 <input type="date" class="border p-2 rounded" id="todo-date">
 
-                <button type="button" class="border p-2 rounded mx-px m-2 bg-stone-950 text-white" onclick="validateForm();">+</button>
+                <button type="button" class="border p-2 rounded mx-px m-2 bg-stone-950 text-white"
+                    onclick="validateForm();">+</button>
 
             </form>
-
-
         </section>
 
         <section>
-
-            <button class="border p-2 rounded bg-stone-950 text-white  mr-54 m-2" onclick="filterByDate();">Filter</button>
+            <button class="border p-2 rounded bg-stone-950 text-white mr-54 m-2"
+                onclick="toggleFilter();">Filter</button>
             <button class="border p-2 rounded bg-stone-950 text-white" onclick="clearTodos();">Delete All</button>
-
-            
         </section>
+
+        <section id="filter-section" class="hidden mt-3">
+            <input type="text" id="filter-text" placeholder="Search text..." class="border p-2 rounded">
+            <input type="date" id="filter-date" class="border p-2 rounded">
+            <button class="border p-2 rounded bg-stone-950 text-white" onclick="applyFilter();">Apply</button>
+        </section>
+
 
         <section>
             <header>
@@ -53,10 +59,11 @@
 
     <footer>
 
-        <p>&copy; 2025 Raman. All right reserved</p>
+        <p class="m-7">&copy; 2025 Raman. All right reserved</p>
     </footer>
-    
+
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
