@@ -22,21 +22,19 @@
 
                 <input type="text" class="border p-2 rounded" id="todo-input" placeholder="Enter a New Todo">
 
-                <input type="date" class="border p-2 rounded" id="todo-input">
+                <input type="date" class="border p-2 rounded" id="todo-date">
 
-                <button type="button" class="border p-2 rounded mx-px m-2 bg-stone-950 text-white">+</button>
+                <button type="button" class="border p-2 rounded mx-px m-2 bg-stone-950 text-white" onclick="validateForm();">+</button>
 
             </form>
-
-            
 
 
         </section>
 
         <section>
 
-            <button class="border p-2 rounded bg-stone-950 text-white  mr-54 m-2">Filter</button>
-            <button class="border p-2 rounded bg-stone-950 text-white">Delete All</button>
+            <button class="border p-2 rounded bg-stone-950 text-white  mr-54 m-2" onclick="filterByDate();">Filter</button>
+            <button class="border p-2 rounded bg-stone-950 text-white" onclick="clearTodos();">Delete All</button>
 
             
         </section>
@@ -46,7 +44,7 @@
                 <h1 class="mx-px m-5 text-center font-bold">List Of Todos</h1>
             </header>
 
-            <ul>
+            <ul id="todo-list">
                 <li>No Todos Available</li>
             </ul>
         </section>
